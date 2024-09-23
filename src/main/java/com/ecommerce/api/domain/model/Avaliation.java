@@ -22,7 +22,10 @@ public class Avaliation {
 
     @ManyToOne
     @JoinColumn
-    @JsonBackReference // Evita a recursão cíclica ao serializar o Product
+    @JsonBackReference
     private User user;
+
+    @OneToOne
+    private Product product;
 
 }

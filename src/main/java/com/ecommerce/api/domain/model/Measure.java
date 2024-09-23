@@ -19,6 +19,6 @@ public class Measure {
 
     @ManyToOne
     @JoinColumn
-    @JsonBackReference // Evita a recursão cíclica ao serializar o Product
+    @JsonBackReference
     private Product product;
 }

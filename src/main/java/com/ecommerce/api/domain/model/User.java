@@ -39,13 +39,13 @@ public class User implements UserDetails {
     @Column(unique = true)
     private String username;
     private String password;
-    private String cpf;      // cpf
+    private String cpf;
 
     private String city;
     private String district;  // Bairro
     private String streetName;    // Nome da rua
     private String streetNumber;  // Número da rua
-    private String zipCode;       // CEP alterado para zipCode
+    private String zipCode;       // CEP
 
     @Enumerated(EnumType.STRING)
     private Role role;
@@ -58,8 +58,12 @@ public class User implements UserDetails {
     private List<Buy> buys;
 
     @OneToMany(mappedBy = "user")
-    @JsonManagedReference // Gerencia a serialização do lado da Category
+    @JsonManagedReference
     private List<Avaliation> avaliation;
+
+    @OneToMany(mappedBy = "user")
+    @JsonManagedReference
+    private List<Comment> comment;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

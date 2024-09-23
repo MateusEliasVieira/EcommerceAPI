@@ -41,11 +41,17 @@ public class Product {
 
     @ManyToOne
     @JoinColumn
-    @JsonBackReference // Evita a recursão cíclica ao serializar o Product
+    @JsonBackReference
     private Category category;
 
     @OneToMany(mappedBy = "product")
-    @JsonManagedReference // Gerencia a serialização do lado da Category
+    @JsonManagedReference
     private List<Measure> measure; // medida
+
+    @OneToMany
+    private List<Avaliation> avaliation;
+
+    @OneToMany
+    private List<Comment> comment;
 
 }

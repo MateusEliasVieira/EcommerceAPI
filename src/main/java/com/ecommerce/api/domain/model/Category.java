@@ -23,7 +23,7 @@ public class Category {
     private CategoryEnum category;
 
     @OneToMany(mappedBy = "category")
-    @JsonManagedReference // Gerencia a serialização do lado da Category
+    @JsonManagedReference
     private List<Product> product;
 
 }
