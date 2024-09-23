@@ -21,8 +21,6 @@ public class UserOutputDTO {
     private String phoneAreaCode;  // Código de área do telefone
     private String phoneNumber;    // Número de telefone
     private String email;
-    private String username;
-    private String password;
     private String cpf;      // Número do documento
 
     private String city;

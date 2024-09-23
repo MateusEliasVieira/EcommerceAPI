@@ -49,9 +49,11 @@ public class Product {
     private List<Measure> measure; // medida
 
     @OneToMany
+    @JsonManagedReference
     private List<Avaliation> avaliation;
 
     @OneToMany
+    @JsonManagedReference
     private List<Comment> comment;
 
 }

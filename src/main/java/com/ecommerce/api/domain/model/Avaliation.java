@@ -26,6 +26,7 @@ public class Avaliation {
     private User user;
 
     @OneToOne
+    @JsonBackReference
     private Product product;
 
 }

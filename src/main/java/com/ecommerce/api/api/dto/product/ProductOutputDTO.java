@@ -1,10 +1,10 @@
 package com.ecommerce.api.api.dto.product;
 
 
+import com.ecommerce.api.api.dto.avaliation.AvaliationOutputDTO;
+import com.ecommerce.api.api.dto.comment.CommentOutputDTO;
 import com.ecommerce.api.domain.model.Category;
 import com.ecommerce.api.domain.model.Measure;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-import jakarta.persistence.OneToMany;
 import lombok.*;
 
 import java.math.BigDecimal;
@@ -33,6 +33,9 @@ public class ProductOutputDTO {
 
     private Category category;
     private List<Measure> measure;
+
+    private List<CommentOutputDTO> comment;
+    private List<AvaliationOutputDTO> avaliation;
 
 
 }

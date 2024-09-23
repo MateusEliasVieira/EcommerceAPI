@@ -26,5 +26,7 @@ public class Comment {
     private User user;
 
     @OneToOne
+    @JoinColumn
+    @JsonBackReference
     private Product product;
 }
