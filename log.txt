@@ -1,0 +1,5 @@
+Date: 1726757613579, IP: 127.0.0.1, Browser: Unknown, SO: Unknown -> Login = [username: mateus, password: ifhonese]
+Date: 1726838627415, IP: 0:0:0:0:0:0:0:1, Browser: Chrome Mobile, SO: Android 6.x -> Login = [username: mateus, password: ifhonese]
+Date: 1726844589201, IP: 0:0:0:0:0:0:0:1, Browser: Chrome 12, SO: Windows 10 -> Login = [username: mateus, password: ifhonese]
+Date: 1726922619437, IP: 0:0:0:0:0:0:0:1, Browser: Chrome 12, SO: Windows 10 -> Login = [username: mateus, password: ifhonese24!!]
+Date: 1726922650591, IP: 0:0:0:0:0:0:0:1, Browser: Chrome Mobile, SO: Android 6.x -> Login = [username: mateus, password: ifhonese24!!]
